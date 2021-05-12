@@ -14,6 +14,7 @@ export default class App extends Component {
               <div className="links">About</div>
             </div>
           </nav>
+          {/* routes from react-router  */}
           {routes}
         </div>
       </HashRouter>
