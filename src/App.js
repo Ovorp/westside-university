@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 import routes from './routes';
 
 export default class App extends Component {
@@ -10,11 +10,14 @@ export default class App extends Component {
           <nav className="nav">
             <div>WestSide University</div>
             <div className="link-wrap">
-              <div className="links">Home</div>
-              <div className="links">About</div>
+              <Link to={`/`}>
+                <div className="links">Home</div>{' '}
+              </Link>
+              <Link to={`/about`}>
+                <div className="links">About</div>
+              </Link>
             </div>
           </nav>
-          {/* routes from react-router  */}
           {routes}
         </div>
       </HashRouter>
