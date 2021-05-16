@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default class Student extends Component {
   constructor() {
@@ -32,6 +33,9 @@ export default class Student extends Component {
         </h1>
         <h3>Grade: {grade}</h3>
         <h3>Email: {email}</h3>
+        {/* <Link to={}> */}
+        <button onClick={this.props.history.goBack}>Go Back!</button>
+        {/* </Link> */}
       </div>
     );
   }

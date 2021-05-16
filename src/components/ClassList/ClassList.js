@@ -38,6 +38,7 @@ export default class ClassList extends Component {
             </Link>
           );
         })}
+        <button onClick={this.props.history.goBack}>Go Back!</button>
       </div>
     );
   }
